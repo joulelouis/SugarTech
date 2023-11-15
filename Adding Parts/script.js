@@ -9,8 +9,8 @@ function sumParts(numArr) {
     //loop through the values of the numArr 
     for (let i = 0; i < numArr.length; i++) {
         //add the values in the numArr
-        const sum = numArr.reduce((accumulator, currentValue) => {
-            return accumulator + currentValue;
+        const sum = numArr.reduce((sum, value) => {
+            return sum + value;
         }, 0);
         
         //push the result into the newList
